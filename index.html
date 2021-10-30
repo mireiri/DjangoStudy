@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TOP</title>
+        <style>body {margin: 30px; padding: 30px;}</style>
+    </head>
+    <body>
+        <h1>{{ title }}</h1>
+        <a href="{% url 'djangofirst:pref_quiz' %}">県庁所在地クイズ</a>
+        <p></p>
+        <a href="{% url 'djangofirst:random_quiz' %}">ランダムクイズ</a>
+        <p></p>
+        <a href="{% url 'djangofirst:wiki' %}">wikipediaで調べる</a>      
+    </body>
+</html>

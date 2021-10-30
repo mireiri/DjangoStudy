@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Quiz</title>
+        <style>body {margin: 30px; padding: 30px;}</style>
+    </head>
+    <body>
+
+        <h1>{{ title }}</h1>
+        <p>結果は・・・「<strong>{{ score }}</strong>」点でした!!</p>
+        {% load boost %}
+        {% for i, j in answer|zip:user_answer %}
+            <p>こたえ：{{ i }} | あなたのこたえ：「{{ j }}」</p>
+        {% endfor %}
+        <p></p>
+        <a href="/">戻る</a>
+
+    </body>
+</html>
